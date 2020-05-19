@@ -36,6 +36,8 @@ public class MapController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	
+	// 들어오 주소기준 map.jsp 호출	
 	@RequestMapping(value = "/map", method = RequestMethod.GET)
 	public String Map(@RequestParam("addr") String search, Model model) 
 	{
