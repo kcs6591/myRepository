@@ -46,6 +46,7 @@ public class MapController {
 		return "map";
 	}
 	
+	// 마스크정보 Search (공공데이터 참조)
 	@RequestMapping(value = "/map/searchMask", method = RequestMethod.GET)
 	public @ResponseBody ArrayList<MaskInfo> searchMask(@RequestParam("ga") String ga, @RequestParam("ha") String ha) 
 	{
